@@ -1,4 +1,4 @@
-package OCcal;
+ï»¿package OCcal;
 import java.util.Scanner;
 import java.lang.Math.* ;
 
@@ -6,46 +6,46 @@ public class Main
 {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
-		System.out.println("»¶Ó­Ê¹ÓÃZylo¹¤×Ê¼ÆËãÆ÷JAVA°æ\n\n");
+		System.out.println("æ¬¢è¿ä½¿ç”¨Zyloå·¥èµ„è®¡ç®—å™¨JAVAç‰ˆ\n\n");
 		
-		System.out.println("ÇëÊäÈëÄãÏë¼ÆËãµÄÔÂ·İ");
+		System.out.println("è¯·è¾“å…¥ä½ æƒ³è®¡ç®—çš„æœˆä»½");
 		int month = input.nextInt();
-		System.out.println("ÄãÊäÈëµÄÔÂ·İÊÇ "+month+"ÔÂ\n");
+		System.out.println("ä½ è¾“å…¥çš„æœˆä»½æ˜¯ "+month+"æœˆ\n");
 		
-		System.out.println("ÇëÊäÈëÄã±¾ÔÂÔ¤¼Æ¼Ó°à×ÜÊ±³¤");
+		System.out.println("è¯·è¾“å…¥ä½ æœ¬æœˆé¢„è®¡åŠ ç­æ€»æ—¶é•¿");
 		int ochour = input.nextInt();
-		System.out.println("ÄãÊäÈëµÄÔÂ·İÊÇ "+month+"ÔÂ\n");
+		System.out.println("ä½ è¾“å…¥çš„æœˆä»½æ˜¯ "+month+"æœˆ\n");
 		
-		System.out.println("ÇëÊäÈëÄãµÄ»ù±¾¹¤×Ê");
+		System.out.println("è¯·è¾“å…¥ä½ çš„åŸºæœ¬å·¥èµ„");
 		int basesalary = input.nextInt();
-		System.out.println("ÄãÊäÈëµÄ»ù±¾¹¤×ÊÊÇ"+basesalary+"Ôª\n");
+		System.out.println("ä½ è¾“å…¥çš„åŸºæœ¬å·¥èµ„æ˜¯"+basesalary+"å…ƒ\n");
 		
 		int pa, la, ta, nsa, sa, ea, uf = 1;  //pa,performance award; la,living allowance; ta, transport allowance; nsa,nightshift allowance; sa,special allowance; uf, union fee; ea, environment allowance;
 		int loop = 0;
 		while(loop == 0){
-		System.out.println("ÇëÊäÈëÄãµÄ¼¶±ğ(×ÖÄ¸´óĞ´)");
+		System.out.println("è¯·è¾“å…¥ä½ çš„çº§åˆ«(å­—æ¯å¤§å†™)");
 		String level = input.next();
 		if(level.equals("Y1")){
 			pa = 300;
 			la = 420;
-			System.out.println("±íÏÖ½±"+pa);
-			System.out.println("Íâ×¡²¹Ìù"+la);
+			System.out.println("è¡¨ç°å¥–"+pa);
+			System.out.println("å¤–ä½è¡¥è´´"+la);
 			loop++;
 			}
 		else if(level.equals("Y2")){
 			pa = 600;
 			la = 700;
-			System.out.println("±íÏÖ½±"+pa);
-			System.out.println("Íâ×¡²¹Ìù"+la);
+			System.out.println("è¡¨ç°å¥–"+pa);
+			System.out.println("å¤–ä½è¡¥è´´"+la);
 			loop++;
 			}
 		else{
-			System.out.println("ÊäÈëÓĞÎó£¬ÖØĞÂÊäÈë\n");
+			System.out.println("è¾“å…¥æœ‰è¯¯ï¼Œé‡æ–°è¾“å…¥\n");
 			continue;
 			}
 		ta = 150;
 		sa = 0;
-		System.out.println("½»Í¨²¹Ìù"+ta);
+		System.out.println("äº¤é€šè¡¥è´´"+ta);
 		
 		if(month==6 || month==7 || month==8 || month==9 || month==10){
 			ea = 100;
@@ -53,57 +53,57 @@ public class Main
 		else{ea = 0;}
 		
 		//if(ifnightshirt == "Y") nsa = 20 * wd;
-		//System.out.println("±¾ÔÂÊÇ·ñÒ¹°à£¿(Y/N)");
+		//System.out.println("æœ¬æœˆæ˜¯å¦å¤œç­ï¼Ÿ(Y/N)");
 		//String ifnightshirt = input.next();
 		
 		
 		double hourlysalary2 = basesalary / 21.75 / 8;
 		String hourlysalary1 = String.format("%.2f", hourlysalary2);
 		double hourlysalary =  Double.parseDouble(hourlysalary1);
-		System.out.println("Ê±Ğ½"+hourlysalary+"Ôª");
+		System.out.println("æ—¶è–ª"+hourlysalary+"å…ƒ");
 		
-		System.out.println("Çë·Ö±ğÊäÈëÆ½¼Ó£¬Ğİ¼Ó£¬½Ú¼ÓÊ±³¤£¬·Ö±ğ°´»Ø³µ");
+		System.out.println("è¯·åˆ†åˆ«è¾“å…¥å¹³åŠ ï¼Œä¼‘åŠ ï¼ŒèŠ‚åŠ æ—¶é•¿ï¼Œåˆ†åˆ«æŒ‰å›è½¦");
 		OCsalary oc = new OCsalary(input.nextInt(),input.nextInt(),input.nextInt());
 		double ocsalary =( oc.getOCa()*1.5 + oc.getOCb()*2 + oc.getOCc()*3 ) * hourlysalary;
-		System.out.println("¼Ó°à¹¤×Ê"+ocsalary);
+		System.out.println("åŠ ç­å·¥èµ„"+ocsalary);
 		
-		System.out.println("Çë·Ö±ğÊäÈëÇ·ÇÚÊ±³¤");
+		System.out.println("è¯·åˆ†åˆ«è¾“å…¥æ¬ å‹¤æ—¶é•¿");
 		Absentcost absent = new Absentcost(input.nextInt());
 		double absentcost =( absent.getAbsentcost() ) * hourlysalary;
-		System.out.println("Ç·ÇÚ¿Û·Ñ"+absentcost);
+		System.out.println("æ¬ å‹¤æ‰£è´¹"+absentcost);
 		
-		System.out.println("ÇëÊäÈëÉç±£»ùÊı");
+		System.out.println("è¯·è¾“å…¥ç¤¾ä¿åŸºæ•°");
 		Insurance insurance = new Insurance(input.nextInt());
 		double ins = insurance.getInsurance();
 			
-		System.out.println("ÇëÊäÈë¹«»ı½ğ»ùÊı");
+		System.out.println("è¯·è¾“å…¥å…¬ç§¯é‡‘åŸºæ•°");
 		ProvidentFund providentfund = new ProvidentFund(input.nextInt());
 		double prof = providentfund.getProvidentFund();
 		
-		System.out.println("Éç±£"+String.format("%.2f", ins));
-		System.out.println("¹«»ı½ğ"+String.format("%.2f", prof));
+		System.out.println("ç¤¾ä¿"+String.format("%.2f", ins));
+		System.out.println("å…¬ç§¯é‡‘"+String.format("%.2f", prof));
 		
 		double allsalarypre2 = basesalary + ocsalary + pa + la +ta + sa + ea - absentcost - ins - prof;
 		String allsalarypre1 =String.format("%.2f",allsalarypre2);
 		double allsalarypre = Double.parseDouble(allsalarypre1);
-		System.out.println("Ó¦·¢¹¤×Ê"+allsalarypre);
+		System.out.println("åº”å‘å·¥èµ„"+allsalarypre);
 		
 		Tax tax = new Tax(allsalarypre);
 		double t = tax.getTax();
-		System.out.println("¸öÈËËùµÃË°Îª" + t + "Ôª");
+		System.out.println("ä¸ªäººæ‰€å¾—ç¨ä¸º" + t + "å…ƒ");
 		
 		double allsalarypost2 = allsalarypre - t;
 		String allsalarypost1 = String.format("%.2f",allsalarypost2);
 		double allsalarypost = Double.parseDouble(allsalarypost1);
-		System.out.println("Êµ·¢¹¤×Ê"+allsalarypost);
+		System.out.println("å®å‘å·¥èµ„"+allsalarypost);
 		}
 	}
 }
 
 class OCsalary{
-	int oca; //workday£¬µ¥Î»Ôª
-	int ocb; //restday£¬µ¥Î»Ôª
-	int occ; //holiday£¬µ¥Î»Ôª
+	int oca; //workdayï¼Œå•ä½å…ƒ
+	int ocb; //restdayï¼Œå•ä½å…ƒ
+	int occ; //holidayï¼Œå•ä½å…ƒ
 	
 	OCsalary(int oca, int ocb, int occ){
 		this.oca = oca;
@@ -126,7 +126,7 @@ class OCsalary{
 }
 
 class Absentcost{
-	int absent; //Ç·ÇÚÊ±³¤
+	int absent; //æ¬ å‹¤æ—¶é•¿
 	
 	Absentcost(int absent){
 		this.absent = absent;
@@ -170,7 +170,7 @@ class Tax{
 	
 	double getTax(){
 		double tax = 0;
-		//tax ±ØĞëÒÑ¾­¸³Öµ
+		//tax å¿…é¡»å·²ç»èµ‹å€¼
 		if(base <= 3500){
 			tax = 0;
 		}
